@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./Develop/assets/css/style.css" />
   <title>Task Board</title>
 </head>
 
@@ -25,6 +25,34 @@
       <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
     </div>
     <!-- Todo: Create a modal with a form to add tasks -->
+    <div class="modal" id="formModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content"> <!--make sure the modal's header, body, and footer are in this div.-->
+          <div class="modal-header"> <!--HEADER is within the div.-->
+            <h4 class="modal-title">Add Task</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button><!--look up the different aria options to use for this.-->
+          </div>
+          <div class="modal-body"><!--the BODY is within the div.-->
+            <form id="newtasksForm">
+              <div><!--add a class here??-->
+                <div class="col-md-6">
+                  <label for="taskTitle" class="col-form-label-sm">Title</label>
+                  <input type="text" id="taskTitle"/>
+                </div>
+                <div class="col-md-6">
+                  <label for="taskDueDate" class="col-form-label-sm">Due Date</label>
+                  <input type="text" id="taskDueDate" autocomplete="off"/>
+                </div>
+                <div><!--Class??-->
+                  <label for="taskDescription" class="col-form-label-sm">Description</label>
+                  <textarea id="taskDescription"></textarea><!--use text area so they have room to describe.-->
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row swim-lanes text-center justify-content-between">
       <div class="col-12 col-lg-4 d-flex">
         <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
@@ -67,7 +95,7 @@
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
 
-  <script src="./assets/js/script.js"></script>
+  <script src="./Develop/assets/js/script.js"></script>
 </body>
 
 </html>
