@@ -4,6 +4,7 @@
 This week, we had the chance to build a task board that would separate your cards based upon the current progress and due date. This assignment involved using dayjs and APIs. A user can utilize this tool to help keep track of what they need to complete and how soon they should complete it. 
 
 ## Screenshot
+![Screenshot](https://github.com/Hayden-Cook/05-Module-Challenge/blob/main/Develop/assets/images/Task%20Board.png)
 
 ## Credits
 Module 5 Criteria
