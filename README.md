@@ -17,6 +17,7 @@ Day.js
 https://day.js.org/docs/en/installation/installation
 
 ## Deployment URL
+https://hayden-cook.github.io/05-Module-Challenge/
 
 ## License
 [MIT]
